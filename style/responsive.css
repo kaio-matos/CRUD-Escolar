@@ -5,5 +5,20 @@
   body {
     flex-direction: column;
     align-items: center;
+    width: 100vw;
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+  .form > section {
+    width: 100vw;
+    max-width: max-content;
+    padding: 10px;
+  }
+  .database {
+    font-size: 9px;
+  }
+
+  input {
+    box-sizing: border-box;
   }
 }
