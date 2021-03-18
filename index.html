@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/fillData.css">
+    <link rel="stylesheet" href="./style/dataBase.css">
+    <link rel="stylesheet" href="./style/responsive.css">
+    <title>School System</title>
+</head>
+
+<body>
+    <!-- Formulário do Aluno que vai ser cadastrado -->
+    <section class="form">
+        <h1>Adicionar um Aluno ao Banco de Dados</h1>
+
+        <!-- Container -->
+        <section>
+
+            <!-- Nome -->
+            <section>
+                <p>Nome do aluno:</p>
+                <input id="name" type="name" placeholder="Nome do aluno">
+            </section>
+
+            <!-- Notas -->
+            <section id=notas>
+                <p>Notas:</p>
+                <input id="n1" min="0" max="10" type="number" placeholder="Nota 1">
+                <input id="n2" min="0" max="10" type="number" placeholder="Nota 2">
+                <p id="aviso"></p>
+            </section>
+
+            <!-- Advertências -->
+            <section>
+                <p>Advertências:</p>
+                <input id="adv" type="text">
+            </section>
+
+            <!-- Adicionar Aluno -->
+            <button onclick="createObjAluno()">Adicionar Novo Aluno</button>
+        </section>
+        <!-- /Container -->
+
+        <!-- Aviso de falha ou sucesso na operação -->
+        <h5 id="failedSuccess"></h5>
+    </section>
+
+    <!-- Banco de dados dos nomes cadastrados em tabela -->
+    <section class="database">
+        <h1>DataBase</h1>
+
+        <!-- Container table -->
+        <section class="flex">
+
+            <!-- Table -->
+            <table>
+            </table>
+
+        </section>
+
+    </section>
+
+
+
+
+    <!-- Firebase - Firestore -->
+    <script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-firestore.js"></script>
+    <!-- Firebase - Firestore -->
+
+    <!-- Scripts -->
+    <script src="./scripts/app.js"></script>
+    <script src="./scripts/interface.js"></script>
+    <!-- /Scripts -->
+
+</body>
+
+</html>

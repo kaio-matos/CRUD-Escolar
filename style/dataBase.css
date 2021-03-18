@@ -1,0 +1,49 @@
+.database {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+  width: 100%;
+}
+
+table {
+  width: 50vw;
+}
+
+table,
+th,
+td {
+  border: 2px solid rgb(134, 88, 88);
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 10px;
+  text-align: left;
+  background: white;
+}
+
+td {
+  position: relative;
+}
+
+/* Botão Delete */
+button.delete {
+  position: absolute;
+  right: 0;
+  top: 0;
+
+  border-bottom: 1px solid black;
+  border-left: 1px solid black;
+  background: white;
+  font-size: small;
+
+  margin: 0;
+  padding: 2px;
+  border-radius: 0px 0px 10px 10px;
+}
+
+button.delete:hover {
+  transform: scale(1);
+}
